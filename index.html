@@ -1,160 +1,284 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Danilo Santos</title>
-		<link rel="stylesheet" href="./styles/style.css" />
-	</head>
-	<body>
-		<header class="header__main">
-			<img src="./assets/img/Prata transp.png" width="30px" height="26px">
 
-			<nav class="header__menu">
-				<a class="header__menu__link" href="#Home">Home</a>
-				<a class="header__menu__link" href="#About">Conhecimento Técnico</a>
-				<a class="header__menu__link" href="#Contato">Contato</a>
-			</nav>
-		</header>
-		
-			<main >
-				<section id= "Home" class="introduction__content">
-					<div class="container__introduction__presentation">
-						<div class="container__introduction">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Danilo Santos - Desenvolvedor Full Stack</title>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
 
-							<h1 class="introduction__title">Seja <strong class="featured__title">bem-vindo!</strong></h1>
-							<p class="introduction__text"><br>
-							Olá! Sou <strong>Danilo Santos</strong>, estudo desenvolvimento Web e Programação. <br /><br />
-						
-							<h2  class="introduction__title">Resumo</h2>
-							<div class="summary">
-						<ul class="brief__summary">
-							<li class="summary__item">Cursando Análise e Desenvolvimento de Sistemas <abbr title="Faculdade de Tecnologia de São Paulo">(FATEC-SP)</abbr></li>
+<body>
+  <!-- Header -->
+  <header class="header" id="header">
+    <nav class="nav-container">
+      <a href="#" class="logo">Danilo Santos</a>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">Sobre</a></li>
+        <li><a href="#skills" class="nav-link">Habilidades</a></li>
+        <li><a href="#projects" class="nav-link">Projetos</a></li>
+        <li><a href="#contact" class="nav-link">Contato</a></li>
+      </ul>
+      <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+  </header>
 
-							<li class="summary__item">Estudante de Programação e Desenvolvimento Web</li>
-							
-						</ul>
-										
-						<br/>Vamos conversar?
-									
-						<h2 class="introduction__links">Acesse minhas redes:</h2>
-				
-						<div class="btn__link">
-							<a class="btn__link__social" href="https://www.linkedin.com/in/daniloasantos/">
-								<source srcset="./assets/icon/linkedin.png" media="(min-width: 1000px)">
-								<img src="./assets/icon/icons8-linkedin.svg" alt="logo Linkedin"/>
-							</a>
-							<a class="btn__link__social" href="https://github.com/daniloadossantos">
-								<source srcset="./assets/icon/github.png" media="(min-width: 1000px)">
-								<img src="./assets/icon/icons8-github.svg" alt="logo GitHub"/>
-								</a>
+  <section class="intro" id="home">
+    <div class="intro-container">
+      <div class="intro-content fade-in-up">
+        <h1>Olá, eu sou <br><span style="color: var(--primary-color);">Danilo Santos</span></h1>
+        <p class="subtitle">Desenvolvedor Full Stack</p>
+        <p>Transformo ideias em soluções digitais inovadoras. Formado em Análise e Desenvolvimento de Sistemas na
+          FATEC-SP.</p>
+        <div class="cta-buttons">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fas fa-code"></i>
+            Ver Projetos
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <i class="fas fa-envelope"></i>
+            Entrar em Contato
+          </a>
+        </div>
+      </div>
+      <div class="intro-image">
+        <img src="./assets/img/perfil.jfif" alt="Foto perfil de Danilo" class="profile-image">
+      </div>
+    </div>
+  </section>
 
-						</div>
-						</div>
-					</div>
+  <section class="about" id="about">
+    <div class="container">
+      <h2 class="section-title">Sobre Mim</h2>
+      <p class="section-subtitle">Conheça um pouco da minha trajetória</p>
 
-					<div>
-								<img src="./assets/img/perfil.jfif" alt="Foto perfil de Danilo" class="profile__photo" >
-					</div>
-						
-						
-				</div>
-				</section>
+      <div class="about-content">
+        <div>
+          <p class="about-text">
+            Sou estudante de Análise e Desenvolvimento de Sistemas na FATEC-SP, apaixonado por tecnologia e
+            desenvolvimento web. Tenho experiência em diversas linguagens de programação e frameworks modernos.
+          </p>
+          <p class="about-text">
+            Meu foco está em criar soluções digitais eficientes e inovadoras, sempre buscando aprender novas tecnologias
+            e aprimorar minhas habilidades técnicas.
+          </p>
+          <a href="#contact" class="btn btn-primary">
+            <i class="fas fa-download"></i>
+            Download CV
+          </a>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3><i class="fas fa-graduation-cap"></i> Formação</h3>
+            <p>&#9657 Análise e Desenvolvimento de Sistemas - FATEC-SP</p>
+            <p>&#9657 Direito</p>
+          </div>
+          <div class="skill-card">
+            <h3><i class="fas fa-code"></i> Experiência</h3>
+            <p>&#9657 Desenvolvimento de Software</p>
+            <p>&#9657 Analista Funcional</p>
+          </div>
+          <div class="skill-card">
+            <h3><i class="fas fa-lightbulb"></i> Foco</h3>
+            <p>&#9657 Backend</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-				<section id="About" class="hard__skills">
-					<div class="hard__skills container">
-						<h2 class="introduction__title">Conhecimentos Técnicos</h2>
-					</div>
-					
-					<div class="card__hard__skills">
-						<img src="./assets/icon/html-5-logo-svgrepo-com.svg" class="img__hard__skills">
-						<img src="./assets/icon/css-svgrepo-com.svg" class="img__hard__skills">
-						<img src="./assets/icon/javascript-svgrepo-com.svg" class="img__hard__skills">
-						<img src="./assets/icon/python-svgrepo-com.svg" class="img__hard__skills">
-						<img src="./assets/icon/C_Programming_Language.svg" class="img__hard__skills">
-						<img src="./assets/icon/java-icon.svg" class="img__hard__skills">
-					</div>
-					
-					<div class="portfolio__content">
-							<h2 class="introduction__title">Portfolio</h2>
-						</div>
-					
-					<div class="cards_total">
+  <section class="skills" id="skills">
+    <div class="container">
+      <h2 class="section-title">Habilidades Técnicas</h2>
+      <p class="section-subtitle">Tecnologias já utilizadas</p>
 
-						<div class="card">						
-								<div class="card__image"></div>
-								<div class="card__descr-wrapper">
-										
-    							<p class="card__title">Projeto Alura-Flix</p>
-									<p class="card__description">Projeto realizado em conjunto com as aulas Alura</p>
-								<div class="card__links">
-									<div class="card__links links">
-										<img src="./assets/icon/preview.svg" alt="preview">
-										<a class="link__card" href="https://portfolio-alura-flix.vercel.app" target="_blank">Preview</a>
-									</div>
+      <div class="tech-stack">
+        <div class="tech-item">
+          <i class="fab fa-html5 tech-icon" style="color: #e34f26;"></i>
+          <span class="tech-name">HTML5</span>
+        </div>
+        <div class="tech-item">
+          <i class="fab fa-css3-alt tech-icon" style="color: #1572b6;"></i>
+          <span class="tech-name">CSS3</span>
+        </div>
+        <div class="tech-item">
+          <i class="fab fa-js-square tech-icon" style="color: #f7df1e;"></i>
+          <span class="tech-name">JavaScript</span>
+        </div>
+        <div class="tech-item">
+          <i class="fab fa-python tech-icon" style="color: #1572b6;"></i>
+          <span class="tech-name">Python</span>
+        </div>
+        <div class="tech-item">
+          <i class="fas fa-code tech-icon" style="color: #659ad2;"></i>
+          <span class="tech-name">C</span>
+        </div>
+        <div class="tech-item">
+          <i class="fab fa-java tech-icon" style="color: #ed8b00;"></i>
+          <span class="tech-name">Java</span>
+        </div>
+        <div class="tech-item">
+          <i class="fa-solid fa-rocket tech-icon" style="color: #8414ca;"></i>
+          <span class="tech-name">Power Apps</span>
+        </div>
+        <div class="tech-item">
+          <i class="fa-brands fa-windows tech-icon" style="color: #1572b6;"></i>
+          <span class="tech-name">Dynamics</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-									<div class="card__links links">
-										<img src="./assets/icon/icons8-github (1).svg" alt="logo GitHub">
-										<a class="link__card" href="https://github.com/daniloadossantos/portfolio/blob/main/Projeto%201%20-%20Alura%20Plus/index.html" target="_blank">Code</a>
-									</div>
-								</div>
-								</div>
-							</div>
+  <section class="projects" id="projects">
+    <div class="container">
+      <h2 class="section-title">Projetos</h2>
+      <p class="section-subtitle">Alguns dos meus trabalhos recentes</p>
 
-								
-								
-	    					<div class="card">
-									<div class="card__image_1"></div>			
-										<div class="card__descr-wrapper">							
-											<p class="card__title">Calculadora</p>
-											<p class="card__description">Projeto realizado em conjunto com as aulas Alura</p>
-									<div class="card__links">
-										<div class="card__links links">
-										<img src="./assets/icon/preview.svg" alt="preview">
-										<a class="link__card" href="https://portfolio-seven-amber-35.vercel.app/" target="_blank">Preview</a>
-									</div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div id="project-image" class="project-image-1">
+            <i class="fas fa-play-circle" style="font-size: 3rem;"></i>
+            
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Projeto Alura-Flix</h3>
+            <p class="project-description">
+              Plataforma de streaming desenvolvida durante o curso da Alura, com interface moderna e responsiva.
+            </p>
+            <div class="project-links">
+              <a href="https://portfolio-alura-flix.vercel.app" class="project-link" target="_blank">
+                <i class="fas fa-external-link-alt"></i>
+                Demo
+              </a>
+              <a href="https://github.com/daniloadossantos/portfolio" class="project-link" target="_blank">
+                <i class="fab fa-github"></i>
+                Código
+              </a>
+            </div>
+          </div>
+        </div>
 
-									<div class="card__links links">
-										<img src="./assets/icon/icons8-github (1).svg" alt="logo GitHub">
-										<a class="link__card" href="hhttps://github.com/daniloadossantos/Desafios_Alura/tree/main/Calculadora" target="_blank">Code</a>
-									</div>
-								</div>
-								</div>
-								</div>
+        <div class="project-card">
+          <div id="project-image" class="project-image-2">
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Calculadora</h3>
+            <p class="project-description">
+              Calculadora funcional desenvolvida com JavaScript, HTML e CSS com interface intuitiva.
+            </p>
+            <div class="project-links">
+              <a href="https://portfolio-seven-amber-35.vercel.app/" class="project-link" target="_blank">
+                <i class="fas fa-external-link-alt"></i>
+                Demo
+              </a>
+              <a href="https://github.com/daniloadossantos/Desafios_Alura" class="project-link" target="_blank">
+                <i class="fab fa-github"></i>
+                Código
+              </a>
+            </div>
+          </div>
+        </div>
 
+        <div class="project-card">
+          <div id="project-image" class="project-image-3">
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Página Games</h3>
+            <p class="project-description">
+              Projeto pessoal desenvolvido para a FATEC-SP, focado em games com design atrativo.
+            </p>
+            <div class="project-links">
+              <a href="https://projeto-pagina-web-fatec.vercel.app/" class="project-link" target="_blank">
+                <i class="fas fa-external-link-alt"></i>
+                Demo
+              </a>
+              <a href="https://github.com/daniloadossantos/Projeto_PaginaWeb_Fatec" class="project-link"
+                target="_blank">
+                <i class="fab fa-github"></i>
+                Código
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-						<div class="card">
-							<div class="card__image_2"></div>			
-							<div class="card__descr-wrapper">
-										
-											<p class="card__title">Página Games</p>
-											<p class="card__description">Projeto pessoal - FATEC-SP</p>
-									<div class="card__links">
-									<div class="card__links links">
-										<img src="./assets/icon/preview.svg" alt="preview">
-										<a class="link__card" href="https://projeto-pagina-web-fatec.vercel.app/" target="_blank">Preview</a>
-									</div>
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2 class="section-title">Vamos Conversar?</h2>
+      <p class="section-subtitle">Entre em contato comigo</p>
 
-									<div class="card__links links">
-										<img src="./assets/icon/icons8-github (1).svg" alt="logo GitHub">
-										<a class="link__card" href="https://github.com/daniloadossantos/Projeto_PaginaWeb_Fatec" target="_blank">Code</a>
-									</div>
-								</div>
-								</div>
-								</div>
-							</div>
-					</div>
-				</section>
-				
-			</main>
-		
-		<footer id="footer__content">
-			<p>Desenvolvido por <strong>Danilo Alves dos Santos.</p>
-		</footer>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope contact-icon" style="color: #e2e8f0;"></i>
+            <div>
+              <p>danilo@exemplo.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-linkedin contact-icon" style="color: #e2e8f0;"></i>
+            <div>
+              <a href="https://www.linkedin.com/in/daniloasantos/" target="_blank">linkedin.com/in/daniloasantos</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-github contact-icon" style="color: #e2e8f0;"></i>
+            <div>
+              <a href="https://github.com/daniloadossantos" target="_blank">github.com/daniloadossantos</a>
+            </div>
+          </div>
+        </div>
 
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name" class="form-label">Nome</label>
+            <input type="text" id="name" name="name" class="form-input" required>
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" name="email" class="form-input" required>
+          </div>
+          <div class="form-group">
+            <label for="message" class="form-label">Mensagem</label>
+            <textarea id="message" name="message" class="form-textarea" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">
+            <i class="fas fa-paper-plane"></i>
+            Enviar Mensagem
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
 
-		<script src="./assets/script.js"></script>
-		
-	</body>
-</html>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Danilo Santos</h3>
+          <p>Desenvolvedor Full Stack apaixonado por tecnologia e inovação.</p>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/daniloasantos/" class="social-link" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/daniloadossantos" class="social-link" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Links Rápidos</h3>
+          <p><a href="#home">Home</a></p>
+          <p><a href="#about">Sobre</a></p>
+          <p><a href="#skills">Habilidades</a></p>
+          <p>
